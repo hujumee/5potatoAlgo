@@ -12,10 +12,7 @@ while start <= end:
     for elem in trees:
         if elem > mid:
             cnt += elem - mid
-    if cnt == M:
-        res = mid
-        break
-    elif cnt > M:
+    if cnt >= M:
         start = mid + 1
     else:
         end = mid - 1
